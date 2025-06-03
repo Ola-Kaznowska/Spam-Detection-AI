@@ -100,7 +100,7 @@ def evaluate_model(model, test_data):
         if pred == rec["label"]:
             correct += 1
     accuracy = correct / len(test_data)
-    print(f"Skutecznosc na zbiorach testowych: {accuracy * 100:.2f}%")
+    print(f"Effectiveness on test collections: {accuracy * 100:.2f}%")
     
     return accuracy
 
@@ -121,12 +121,12 @@ def main():
     evaluate_model(model, test)
 
     while True:
-        user_input = input("Enter a message to clasyfication or exit: \n")
+        user_input = input("Enter message to close or exit (exit): \n")
         if user_input.lower() == "exit":
             print("Goodbey")
             break
         prediction = predict(model, user_input)
-        print(f"Clasyfication {prediction}")
+        print(f"Classification {prediction}")
 
 
 

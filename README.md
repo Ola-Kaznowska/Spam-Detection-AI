@@ -74,7 +74,6 @@ cd Spam-Detection-AI
 
 # 🧠 What the App Does
 # Loads and processes text data
-
 # Transforms input using TfidfVectorizer
 
 # Predicts whether the message is SPAM (1) or NOT-SPAM (0)
